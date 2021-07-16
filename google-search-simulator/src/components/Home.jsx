@@ -103,7 +103,7 @@ const MicIcon = styled.div`
   }
 `;
 
-export default function Home(){
+export default function Home({words}){
 
   const [state,setState] = useState("");
  
