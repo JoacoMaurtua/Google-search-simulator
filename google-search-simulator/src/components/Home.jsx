@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import Input from './Input';
+import FilterList from './FilterList';
 
 const Container = styled.div`
   display: flex;
@@ -130,6 +131,7 @@ export default function Home({words}){
 
              
             <Input initialWord={state} setInitialWord={setState}/>
+           
 
             <MicIcon>
               <svg
@@ -154,6 +156,9 @@ export default function Home({words}){
             </MicIcon>
           </Search>
         </Form>
+
+        <FilterList wordsGroup={ words.filter(word => word.indexOf(state) > -1)} inputWord={state} />
+        
         <ButtonSection>
           <button>Google Search</button>
           <button>I'm Feeling Lucky</button>
