@@ -1,9 +1,10 @@
 import React from 'react'
+import {Container} from '../styles/center'
 
-export default function Gmail() {
+export default function About() {
   return (
-    <div>
+    <Container>
       <h1>Gmail</h1>
-    </div>
+    </Container>
   )
 }

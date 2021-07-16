@@ -1,9 +1,10 @@
 import React from 'react'
+import {Container} from '../styles/center'
 
 export default function About() {
   return (
-    <div>
+    <Container>
       <h1>About</h1>
-    </div>
+    </Container>
   )
 }

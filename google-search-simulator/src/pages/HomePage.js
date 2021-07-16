@@ -1,9 +1,10 @@
 import React from 'react'
+import {Container} from '../styles/center'
 
-export default function HomePage() {
+export default function About() {
   return (
-    <div>
+    <Container>
       <h1>Home Page</h1>
-    </div>
+    </Container>
   )
 }
