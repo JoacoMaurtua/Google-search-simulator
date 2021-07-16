@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export default function NavBar() {
   return (
     <div>
-      chau
+     
     </div>
   )
 }
