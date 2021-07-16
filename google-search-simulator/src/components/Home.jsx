@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
+import Input from './Input';
 
 const Container = styled.div`
   display: flex;
@@ -81,22 +82,6 @@ const SearchIcon = styled.span`
   }
 `;
 
-const SearchInput = styled.input`
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  height: 40px;
-  background-color: transparent;
-  border: none;
-  margin: 0;
-  padding: 0;
-  color: rgba(0, 0, 0, 0.87);
-  word-wrap: break-word;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
-  height: 34px;
-  font-size: 16px;
-`;
 
 const MicIcon = styled.div`
   display: flex;
@@ -109,14 +94,19 @@ const MicIcon = styled.div`
   width: 40px;
   line-height: 44px;
   height: 44px;
+  
   svg {
     height: 24px;
     width: 24px;
     vertical-align: middle;
+    margin-left: 10px;
   }
 `;
 
 export default function Home(){
+
+  const [state,setState] = useState("");
+ 
   return (
     <Container>
       <LogoSection>
@@ -137,7 +127,10 @@ export default function Home(){
                 <path d='M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z' />
               </svg>
             </SearchIcon>
-            <SearchInput type='text' />
+
+             
+            <Input initialWord={state} setInitialWord={setState}/>
+
             <MicIcon>
               <svg
                 focusable='false'
