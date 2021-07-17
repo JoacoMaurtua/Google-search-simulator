@@ -164,7 +164,7 @@ export default function Home({words}){
           </Search>
         </Form>
        
-        {/* <FilterList wordsGroup={ words.filter(word => word.indexOf(state) > -1)} inputWord={state} /> */}
+        <FilterList wordsGroup={ words.filter(word => word.indexOf(state) > -1)} inputWord={state} /> 
         
         <ButtonSection>
           <button>Google Search</button>

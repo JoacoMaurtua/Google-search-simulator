@@ -12,15 +12,16 @@ function App() {
   return (
     <>
       <NavBar/>
-      <Home words={['Argentina','Argelia','Alemania','Albania','Brasil','Brazo mecanico', 'mecatronica', 'java', 'java script', 'espacio','espacial', 'joaquin','jota','medicina','something','sobrero','wholesome','randson','apple','recact' ]}/>
       
-      {/* <Switch>
-        <Route path="/"       exact component={Home} />
+      <Switch>
+        <Route path="/"       exact component={Home} >
+          <Home words={['Argentina','Argelia','Alemania','Albania','Brasil','Brazo mecanico', 'mecatronica', 'java', 'java script', 'espacio','espacial', 'joaquin','jota','medicina','something','sobrero','wholesome','randson','apple','recact' ]}/>
+        </Route>
         <Route path="/about"  exact component={About}/>
         <Route path="/store"  exact component={Store}/>
         <Route path="/gmail"  exact component={Gmail}/>
         <Route path="/images" exact component={Images}/>
-      </Switch> */}
+      </Switch> 
     </>
   );
 }
