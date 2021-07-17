@@ -107,7 +107,13 @@ const MicIcon = styled.div`
 export default function Home({words}){
 
   const [state,setState] = useState("");
- 
+
+  const onClick = (event) =>{
+    return(
+      <FilterList wordsGroup={ words.filter(word => word.indexOf(state) > -1)} inputWord={state} />
+    )
+  }
+
   return (
     <Container>
       <LogoSection>
@@ -130,8 +136,9 @@ export default function Home({words}){
             </SearchIcon>
 
              
-            <Input initialWord={state} setInitialWord={setState}/>
+            <Input initialWord={state} setInitialWord={setState} onClick = { e => onClick(e) } />
            
+    
 
             <MicIcon>
               <svg
@@ -156,8 +163,8 @@ export default function Home({words}){
             </MicIcon>
           </Search>
         </Form>
-
-        <FilterList wordsGroup={ words.filter(word => word.indexOf(state) > -1)} inputWord={state} />
+       
+        {/* <FilterList wordsGroup={ words.filter(word => word.indexOf(state) > -1)} inputWord={state} /> */}
         
         <ButtonSection>
           <button>Google Search</button>
