@@ -7,12 +7,16 @@ Buscador inspirado en el motor de búsqueda de Google, implementado con React de
 
 ```sh
 1. git clone https://github.com/JoacoMaurtua/Google-search-simulator.git
+2. cd google-search-simulator
+3. npm i
+4. npm run start
+
 ```
 
 # Link
 
 <p align="left">
 
-http://18.224.96.131/
+https://simple-search-simulator.web.app/
 
 </p>
