@@ -1,6 +1,6 @@
 # Buscador
 
-Buscador inspirado en el motor de búsqueda de Google, implementado con React del lado del front-end con funcionalidades con un filtrado de palabras que permiten ingresar una letra y poder generar una desambiaguación léxica.
+Buscador inspirado en el motor de búsqueda de Google, implementado con React del lado del front-end con funcionalidades como un filtrado de palabras que permite ingresar una letra y poder generar una desambiguación léxica.
 
 
 # Instrucciones
